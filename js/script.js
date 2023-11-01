@@ -1,0 +1,64 @@
+'use strict';
+
+
+const numberOfFilms = prompt('Сколько фильмов вы уже просмотрели?', '');
+
+const personalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: [],
+   privat: false
+};
+
+const a = prompt('Oдин из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Oдин из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+
+// console.log(2 + 2 * 2 !== 6);
+
+
+// let incr = 10;
+// let decr = 10;
+
+// incr++;
+// decr--;
+
+// console.log(incr);
+// console.log(decr);
+
+
+// const category = 'category';
+
+// console.log(`https://someurl.com/${category}`);
+
+// const user = "Oleg";
+
+// alert(`Hi, ${user}!`);
+
+
+
+// alert("Hello!");
+
+// const error = confirm('Are you here?');
+// console.log(error);
+
+
+// const question = prompt('You have 18+?', 'Yes');
+// console.log(question);
+
+
+// const answer = [];
+
+// answer[0] = prompt('Name?', '');
+// answer[1] = prompt('Last Name?', '');
+// answer[2] = prompt('Year?', '');
+
+// console.log(typeof(answer));
