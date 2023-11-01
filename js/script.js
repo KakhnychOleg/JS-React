@@ -1,5 +1,37 @@
 'use strict';
 
+// Условия *****************************************************************
+
+const num = 50;
+
+if(num < 49) {
+   console.log('Error');
+} else if (num > 100) {
+   console.log('Mnogo');
+} else {
+   console.log('Ok!');
+}
+
+(num === 50) ? console.log('Ok!') : console.log('Error');
+
+switch (num) {
+   case 49: 
+      console.log('mimo');
+      break;
+   case 51: 
+      console.log('mimo');
+      break;
+   case 50: 
+      console.log('Ok');
+      break;
+   default: 
+      console.log('ne povezlo');
+      break;
+}
+ 
+// END *********************************************************************
+
+
 // Task create window film question **************************************** 
 
 // const numberOfFilms = prompt('Сколько фильмов вы уже просмотрели?', '');
