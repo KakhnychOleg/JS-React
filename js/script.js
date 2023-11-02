@@ -1,33 +1,61 @@
 'use strict';
 
-// Условия *****************************************************************
+// || ***************************************************************
 
-const num = 50;
+const hamburger = 2;
+const fries = 0;
+const cola = 0;
+const nuggets = 2;
 
-if(num < 49) {
-   console.log('Error');
-} else if (num > 100) {
-   console.log('Mnogo');
+// cola === 1 (можно писать как cola) тоже самое
+if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+   console.log(' Все довольны!');
 } else {
-   console.log('Ok!');
+   console.log('Уходим');
 }
 
-(num === 50) ? console.log('Ok!') : console.log('Error');
+// && ****************************************************************
 
-switch (num) {
-   case 49: 
-      console.log('mimo');
-      break;
-   case 51: 
-      console.log('mimo');
-      break;
-   case 50: 
-      console.log('Ok');
-      break;
-   default: 
-      console.log('ne povezlo');
-      break;
-}
+// const hamburger = 2;
+// const fries = 1;
+// const cola = 1;
+
+// // cola === 1 (можно писать как cola) тоже самое
+// if (hamburger === 3 && cola && fries) {
+//    console.log(' Я сыт!');
+// } else {
+//    console.log('Уходим');
+// }
+
+
+// Условия If *****************************************************************
+
+// const num = 50;
+
+// if(num < 49) {
+//    console.log('Error');
+// } else if (num > 100) {
+//    console.log('Mnogo');
+// } else {
+//    console.log('Ok!');
+// }
+
+// (num === 50) ? console.log('Ok!') : console.log('Error');
+
+// switch (num) {
+//    case 49: 
+//       console.log('mimo');
+//       break;
+//    case 51: 
+//       console.log('mimo');
+//       break;
+//    case 50: 
+//       console.log('Ok');
+//       break;
+//    default: 
+//       console.log('ne povezlo');
+//       break;
+// }
  
 // END *********************************************************************
 
