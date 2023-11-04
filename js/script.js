@@ -26,6 +26,21 @@ for (let i = 1; i < lenght; i++) {
 
 console.log(result);
 
+// Метка для цикла 
+
+// first: for (let i = 1; i < lenght; i++) {
+
+//    for (let j = 1; j < i; j++) {
+//       if (i === 6) continue first;
+//       result += '*';
+//    }
+
+//    result += '\n';
+   
+// }
+
+// console.log(result);
+
 // for & while ************************************************************88
 
 // let num = 50;
