@@ -1,17 +1,29 @@
 'use strict';
 
 
-// homework - && and ||
+let num = 50;
 
-let hamburger;
-const fries = NaN;
-const cola = 0;
-const nuggets = 2;
+while (num < 55) {
+   console.log(num);
+   num++;
+} 
 
 
-if (hamburger && cola || fries === 3 && nuggets) {
-   console.log('Done!')
-}
+
+
+
+
+// homework - && and || *************************************************************
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+
+// if (hamburger && cola || fries === 3 && nuggets) {
+//    console.log('Done!')
+// }
 // false
 
 // let hamburger;
@@ -86,32 +98,32 @@ console.log( 5 === 5 && 3 > 1 || 5); //true
 
 // Условия If *****************************************************************
 
-const num = 50;
+// const num = 50;
 
-if(num < 49) {
-   console.log('Error');
-} else if (num > 100) {
-   console.log('Mnogo');
-} else {
-   console.log('Ok!');
-}
+// if(num < 49) {
+//    console.log('Error');
+// } else if (num > 100) {
+//    console.log('Mnogo');
+// } else {
+//    console.log('Ok!');
+// }
 
-(num === 50) ? console.log('Ok!') : console.log('Error');
+// (num === 50) ? console.log('Ok!') : console.log('Error');
 
-switch (num) {
-   case 49: 
-      console.log('mimo');
-      break;
-   case 51: 
-      console.log('mimo');
-      break;
-   case 50: 
-      console.log('Ok');
-      break;
-   default: 
-      console.log('ne povezlo');
-      break;
-}
+// switch (num) {
+//    case 49: 
+//       console.log('mimo');
+//       break;
+//    case 51: 
+//       console.log('mimo');
+//       break;
+//    case 50: 
+//       console.log('Ok');
+//       break;
+//    default: 
+//       console.log('ne povezlo');
+//       break;
+// }
  
 // END *********************************************************************
 
