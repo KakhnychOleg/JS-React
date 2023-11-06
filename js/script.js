@@ -1,6 +1,44 @@
 'use strict';
 
 
+// Условия и циклы ***********************************************************
+
+// const numberOfFilms = +prompt('Сколько фильмов вы уже просмотрели?', '');
+
+// const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//    actors: {},
+//    genres: [],
+//    privat: false
+// };
+
+// for (let i = 0; i < 2; i++) {
+//    const a = prompt('Oдин из последних просмотренных фильмов?', ''),
+//          b = prompt('На сколько оцените его?', '');
+
+//    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//       personalMovieDB.movies[a] = b;
+//       console.log('done');
+//    } else {
+//       console.log('error');
+//       i--;
+//    }
+// }
+
+// if (personalMovieDB.count < 10) {
+//    console.log('Просмотрено мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//    console.log('Вы класический зритель');
+// } else if (personalMovieDB.count >= 30) {
+//    console.log('Вы киноман');
+// } else {
+//    console.log('Error');
+// }
+
+// console.log(personalMovieDB);
+
+
 // Елечка из " * " *********************************
 //      *
 //     ***
@@ -25,45 +63,45 @@
 // console.log(length)
 // ***********************************************
 
-function fourthTask() {
-   // Пишем решение вот тут
-   let i = 2;
+// function fourthTask() {
+//    // Пишем решение вот тут
+//    let i = 2;
    
-   while (i <= 16) {
-       if (i % 2 === 0) {
-           continue;
-       } else {
-           console.log(i);
-       }
-       i++;
-   }
+//    while (i <= 16) {
+//        if (i % 2 === 0) {
+//            continue;
+//        } else {
+//            console.log(i);
+//        }
+//        i++;
+//    }
    
-}
+// }
 
 
 // for in for Вложенные циклы ****************************************************
 
-for (let i = 0; i < 3; i++) {
-   console.log(i);
+// for (let i = 0; i < 3; i++) {
+//    console.log(i);
 
-   for (let j = 0; j < 3; j++) {
-      console.log(j);
-   }
-}
+//    for (let j = 0; j < 3; j++) {
+//       console.log(j);
+//    }
+// }
 
-let result = '';
-let lenght = 10;
+// let result = '';
+// let lenght = 10;
 
-for (let i = 1; i < lenght; i++) {
+// for (let i = 1; i < lenght; i++) {
 
-   for (let j = 1; j < i; j++) {
-      result += '*';
-   }
+//    for (let j = 1; j < i; j++) {
+//       result += '*';
+//    }
 
-   result += '\n';
-}
+//    result += '\n';
+// }
 
-console.log(result);
+// console.log(result);
 
 // Метка для цикла 
 
@@ -94,13 +132,13 @@ console.log(result);
 // } 
 // while (num < 55);
 
-for (let i = 1; i < 10; i++) {
-   if (i === 6) {
-      continue;
-   }
+// for (let i = 1; i < 10; i++) {
+//    if (i === 6) {
+//       continue;
+//    }
 
-   console.log(i);
-}
+//    console.log(i);
+// }
 
 
 // homework - && and || *************************************************************
@@ -141,21 +179,21 @@ for (let i = 1; i < 10; i++) {
 
 
 
-console.log( NaN || 2 || undefined ); // 2
+// console.log( NaN || 2 || undefined ); // 2
 
-console.log( NaN && 2 && undefined ); //NaN
+// console.log( NaN && 2 && undefined ); //NaN
 
-console.log( 1 && 2 && 3 ); //3
+// console.log( 1 && 2 && 3 ); //3
 
-console.log( !1 && 2 || !3 );  //false
+// console.log( !1 && 2 || !3 );  //false
 
-console.log( 25 || null && !3 ); //25
+// console.log( 25 || null && !3 ); //25
 
-console.log( NaN || null || !3 || undefined || 5); // 5
+// console.log( NaN || null || !3 || undefined || 5); // 5
 
-console.log( NaN || null && !3 && undefined || 5); //5
+// console.log( NaN || null && !3 && undefined || 5); //5
 
-console.log( 5 === 5 && 3 > 1 || 5); //true
+// console.log( 5 === 5 && 3 > 1 || 5); //true
 
 
 // || ***************************************************************
@@ -220,66 +258,66 @@ console.log( 5 === 5 && 3 > 1 || 5); //true
 
 // Task create window film question **************************************** 
 
-const numberOfFilms = prompt('Сколько фильмов вы уже просмотрели?', '');
+// const numberOfFilms = prompt('Сколько фильмов вы уже просмотрели?', '');
 
-const personalMovieDB = {
-   count: numberOfFilms,
-   movies: {},
-   actors: {},
-   genres: [],
-   privat: false
-};
+// const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//    actors: {},
+//    genres: [],
+//    privat: false
+// };
 
-const a = prompt('Oдин из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Oдин из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+// const a = prompt('Oдин из последних просмотренных фильмов?', ''),
+//       b = prompt('На сколько оцените его?', ''),
+//       c = prompt('Oдин из последних просмотренных фильмов?', ''),
+//       d = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 // Task END ****************************************************************
 
 
-console.log(2 + 2 * 2 !== 6);
+// console.log(2 + 2 * 2 !== 6);
 
 
-let incr = 10;
-let decr = 10;
+// let incr = 10;
+// let decr = 10;
 
-incr++;
-decr--;
+// incr++;
+// decr--;
 
-console.log(incr);
-console.log(decr);
-
-
-const category = 'category';
-
-console.log(`https://someurl.com/${category}`);
-
-const user = "Oleg";
-
-alert(`Hi, ${user}!`);
+// console.log(incr);
+// console.log(decr);
 
 
+// const category = 'category';
 
-alert("Hello!");
+// console.log(`https://someurl.com/${category}`);
 
-const error = confirm('Are you here?');
-console.log(error);
+// const user = "Oleg";
 
-
-const question = prompt('You have 18+?', 'Yes');
-console.log(question);
+// alert(`Hi, ${user}!`);
 
 
-const answer = [];
 
-answer[0] = prompt('Name?', '');
-answer[1] = prompt('Last Name?', '');
-answer[2] = prompt('Year?', '');
+// alert("Hello!");
 
-console.log(typeof(answer));
+// const error = confirm('Are you here?');
+// console.log(error);
+
+
+// const question = prompt('You have 18+?', 'Yes');
+// console.log(question);
+
+
+// const answer = [];
+
+// answer[0] = prompt('Name?', '');
+// answer[1] = prompt('Last Name?', '');
+// answer[2] = prompt('Year?', '');
+
+// console.log(typeof(answer));
