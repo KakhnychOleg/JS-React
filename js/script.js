@@ -1,5 +1,29 @@
 'use strict';
 
+// function declaration
+function showFirstMess(text) {
+   console.log(text);
+}
+
+showFirstMess('Hello!');
+
+// function exspression
+const sum = function(a, b) {
+   return (a + b);
+};
+
+console.log(sum(4, 5));
+
+// arrow function
+// const calc = (a, b) => a + b;
+// console.log(calc(5, 10));
+
+const calc = (a, b) => {
+   console.log('1');
+   return a + b;
+};
+
+
 
 // Условия и циклы ***********************************************************
 
