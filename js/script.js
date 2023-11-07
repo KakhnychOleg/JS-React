@@ -1,5 +1,14 @@
 'use strict';
 
+const usdCurr = 36.2;
+const eurCurr = 38;
+
+function convert(amount, curr) {
+   console.log(curr * amount);
+}
+convert(500, usdCurr);
+convert(500, eurCurr);
+
 // function declaration
 function showFirstMess(text) {
    console.log(text);
