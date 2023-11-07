@@ -1,13 +1,25 @@
 'use strict';
 
+
+
+
+
+// Конвертация валют
 const usdCurr = 36.2;
 const eurCurr = 38;
+const discount = 0.9;
 
 function convert(amount, curr) {
-   console.log(curr * amount);
+   return curr * amount;
 }
-convert(500, usdCurr);
-convert(500, eurCurr);
+
+function promotion(result) {
+   console.log(result * discount);
+}
+
+// лучше делать промежуточную переменную
+let res = convert(500, usdCurr);
+promotion(res);
 
 // function declaration
 function showFirstMess(text) {
