@@ -1,5 +1,32 @@
 'use strict';
 
+
+// method to string *********************************************************************************
+const str = 'Test';
+
+console.log(str);
+console.log(str.toUpperCase());
+
+const fruit = 'Some fruit';
+
+console.log(fruit.indexOf('fruit')); // Показывает с какой позиции начинается слово. Выведет - 5
+
+const logg = 'Hello world';
+
+console.log(logg.slice(6, 8));
+console.log(logg.substring(6, 8)); // не принимает отрицательные числа.
+// console.log(logg.substr(6, 8));
+
+
+const number = 12.2;
+console.log(Math.round(num));
+
+
+const test = '12.2px';
+console.log(parseInt(test));
+console.log(parseFloat(test));
+
+
 // Место для первой задачи
 function sayHello(name) {
    return 'Привет, ' + name + '!';
@@ -25,11 +52,8 @@ function getMathResult(num, times) {
    for (let i = 1; i <= times; i++) {
        if (i === times) {
            str += `${num * i}`;
-           // Тут без черточек в конце
        } else {
            str += `${num * i}---`;
-           // Это тоже самое, что и
-           // str = str + num * i + "---"
        }
    }
 
