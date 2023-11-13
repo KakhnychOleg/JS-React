@@ -1,6 +1,36 @@
 'use strict';
 
 
+// Место для первой задачи
+function calculateVolumeAndArea(number) {
+
+   if (typeof(number) !== 'number' || number < 0 || !Number.isInteger(number)) {
+      return 'При вычислении произошла ошибка';
+   }
+   
+   let resultV = number * number * number;
+   let resultS = 6 * number * number;
+   
+   return `Объем куба: ${resultV}, площадь всей поверхности: ${resultS}`;
+}
+calculateVolumeAndArea(5);
+console.log(calculateVolumeAndArea('asd'));
+
+
+// Место для второй задачи
+function getCoupeNumber(number) {
+   if (number === 0 || number > 36) {
+      return "Таких мест в вагоне не существует";
+   } else if (number < 0 || typeof(number) != 'number' || !Number.isInteger(number)) {
+      return "Ошибка. Проверьте правильность введенного номера места";
+   }
+   
+   return Math.ceil(number / 4);
+}
+getCoupeNumber(5);
+console.log(getCoupeNumber('asd'));
+
+
 // method to string *********************************************************************************
 const str = 'Test';
 
