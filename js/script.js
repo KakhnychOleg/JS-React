@@ -2,6 +2,14 @@
 
 
 // Место для первой задачи
+function getTimeFromMinutes(minutes) {
+   if () {
+      
+   }
+}
+getTimeFromMinutes();
+
+// Место для первой задачи
 function calculateVolumeAndArea(number) {
 
    if (typeof(number) !== 'number' || number < 0 || !Number.isInteger(number)) {
