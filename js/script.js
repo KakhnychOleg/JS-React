@@ -1,13 +1,18 @@
 'use strict';
 
-
-// Место для первой задачи
-function getTimeFromMinutes(minutes) {
-   if () {
-      
-   }
+// Callback
+function first() {
+   setTimeout(function() {
+      console.log(1);
+   }, 500);
 }
-getTimeFromMinutes();
+
+function second() {
+   console.log(2)
+}
+first();
+second();
+
 
 // Место для первой задачи
 function calculateVolumeAndArea(number) {
