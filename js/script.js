@@ -1,5 +1,65 @@
 'use strict';
 
+
+// link
+// const obj = {
+//    a: 5,
+//    b: 10,
+// };
+
+// console.log(obj.a);
+
+function copy(mainObj) {
+   let objCopy = {};
+
+   let key;
+   for (key in mainObj) {
+      objCopy[key] = mainObj[key];
+   }
+
+   return objCopy;
+};
+
+const numbers = {
+   a: 2,
+   b: 4,
+   c: {
+      x: 7,
+      y: 4,
+   }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+
+console.log(newNumbers);
+console.log(numbers);
+
+
+// Object
+const options = {
+   name: 'test',
+   width: 1024,
+   height: 1024,
+   colors: {
+      border: 'black',
+      bg: 'red'
+   }
+};
+
+// console.log(options.name);
+
+// delete options.name;
+
+// console.log(options);
+
+for (let key in options) {
+   console.log(`Свойство ${key}: значение ${options[key]}`);
+}
+
+
+
 // Callback
 function first() {
    setTimeout(function() {
