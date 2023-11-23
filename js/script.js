@@ -36,6 +36,37 @@ newNumbers.a = 10;
 console.log(newNumbers);
 console.log(numbers);
 
+const add = {
+   d: 4,
+   e: 5,
+};
+
+// console.log(Object.assign(numbers, add));
+
+const clone = Object.assign({}, add);
+
+clone.d = 20;
+console.log(add);
+console.log(clone);
+
+
+
+const video = ['youtube', 'vimeo', 'asdtube'];
+const blogs = ['wordpress', 'livejornal', 'blogger'];
+const internet = [...video, ...blogs, 'blogger2', 'facebook2'];
+
+console.log(internet);
+
+function log(a, b, c) {
+   console.log(a);
+   console.log(b);
+   console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num);
+
 
 // Object
 const options = {
