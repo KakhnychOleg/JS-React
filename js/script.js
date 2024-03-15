@@ -1,6 +1,36 @@
 'use strict';
 
 
+const personalPlanPeter = {
+   name: "Peter",
+   age: "29",
+   skills: {
+       languages: ['ru', 'eng'],
+       programmingLangs: {
+           js: '20%',
+           php: '10%'
+       },
+       exp: '1 month'
+   }
+};
+
+function showExperience(plan) {
+   // return personalPlanPeter['skills']['exp'];
+   for (let key in personalPlanPeter) {
+      if (typeof(personalPlanPeter[key]) === 'object') {
+         for (let i in personalPlanPeter[key]) {
+            console.log(`${i} - ${personalPlanPeter[key][i]}`);
+         }
+      }
+   }
+}
+showExperience(personalPlanPeter); //1 month
+
+function showProgrammingLangs(plan) {
+
+}
+
+
 // link
 // const obj = {
 //    a: 5,

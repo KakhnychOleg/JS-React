@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>JavaScript</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Replica</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.3/dist/tailwind.min.css"
+rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+rel="stylesheet">
+<style>
+body {
+font-family: 'Open Sans', sans-serif;
+}
+.section-heading {
+color: #FFD300;
+font-size: 1.25rem; /* 20px */
+font-weight: 600;
+}
+.section-number {
+color: #FFD300;
+font-size: 4rem; /* 64px */
+font-weight: 600;
+line-height: 1;
+}
+.section-content {
+color: #fff;
+margin-bottom: 2rem; /* 32px */
+}
+.map-container {
+background-image: url('https://via.placeholder.com/600x400.png?text=Map');
+background-size: cover;
+background-position: center;
+}
+@media (min-width: 768px) {
+.section-heading {
+font-size: 1.875rem; /* 30px */
+}
+.section-number {
+font-size: 6rem; /* 96px */
+}
+
+}
+</style>
 </head>
-<body>
-
-   <h1>Hello World!</h1>
-
-
-   
-   <script src="js/script.js"></script>
+<body class="bg-black text-white">
+<div class="container mx-auto px-6 py-12">
+<div class="flex flex-wrap -mx-3 overflow-hidden">
+<div class="my-3 px-3 w-full overflow-hidden lg:w-1/2">
+<!-- Content 1 -->
+<div class="section-content">
+<div class="section-number">01</div>
+<h2 class="section-heading">Yes is our starting line</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<!-- Content 2 -->
+<div class="section-content">
+<div class="section-number">02</div>
+<h2 class="section-heading">Our approach is simple</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<!-- Content 3 -->
+<div class="section-content">
+<div class="section-number">03</div>
+<h2 class="section-heading">People are our foundation</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</div>
+<div class="my-3 px-3 w-full overflow-hidden lg:w-1/2 map-container">
+<!-- Map Placeholder - This should taken from user's assets. -->
+</div>
+</div>
+</div>
 </body>
 </html>
