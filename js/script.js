@@ -2,6 +2,6 @@
 
 // alert('Hello');
 
-const result = prompt("Are you here?", "");
+// const result = prompt("Are you here?", "");
 
 console.log(typeof(result));
